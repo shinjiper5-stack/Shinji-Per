@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINJI PER - Bengkel Spesialis Kaki-Kaki & Perawatan Mobil</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold tracking-wider text-white">
+                        SHINJI<span class="text-red-600">PER</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-red-500 transition">Beranda</a>
+                    <a href="#services" class="hover:text-red-500 transition">Layanan</a>
+                    <a href="#about" class="hover:text-red-500 transition">Tentang Kami</a>
+                    <a href="#reviews" class="hover:text-red-500 transition">Ulasan</a>
+                    <a href="#contact" class="hover:text-red-500 transition">Kontak</a>
+                </nav>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/6282113777388?text=Halo%20SHINJI%20PER,%20saya%20ingin%20booking%20servis%20mobil" target="_blank" 
+                       class="bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg transition duration-300 shadow-lg shadow-red-600/30 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Booking Servis
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-white">Beranda</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-white">Layanan</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-white">Tentang Kami</a>
+            <a href="#reviews" class="block py-2 text-slate-300 hover:text-white">Ulasan</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-white">Kontak</a>
+            <a href="https://wa.me/6282113777388?text=Halo%20SHINJI%20PER,%20saya%20ingin%20booking%20servis%20mobil" target="_blank" 
+               class="flex items-center justify-center gap-2 w-full text-center bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-lg mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Booking Servis
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1920&auto=format&fit=crop" 
+                 alt="Bengkel Mobil" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="max-w-3xl">
+                <span class="text-red-500 font-semibold tracking-wider uppercase text-sm">Spesialis Kaki-Kaki & Perawatan Mobil</span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mt-2 leading-tight">
+                    SHINJI PER - Standar Profesional untuk Performa Mobil Maksimal
+                </h1>
+                <p class="mt-4 text-lg text-slate-300 leading-relaxed">
+                    Nikmati servis kaki-kaki dan perawatan mobil yang nyaman, transparan, dan berkualitas tinggi dengan penanganan teknisi berpengalaman.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/6282113777388?text=Halo%20SHINJI%20PER,%20saya%20ingin%20booking%20sekarang" target="_blank" 
+                       class="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-lg text-center transition shadow-lg shadow-red-600/30 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Booking Sekarang
+                    </a>
+                    <a href="#services" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-lg text-center transition">
+                        Lihat Layanan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section class="py-12 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-red-600/10 text-red-500 rounded-xl text-2xl">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Teknisi Ahli</h4>
+                        <p class="text-sm text-slate-400">Berpengalaman & profesional</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-red-600/10 text-red-500 rounded-xl text-2xl">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Harga Transparan</h4>
+                        <p class="text-sm text-slate-400">Estimasi jelas di awal</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-red-600/10 text-red-500 rounded-xl text-2xl">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Spesialis Kaki-Kaki</h4>
+                        <p class="text-sm text-slate-400">Solusi suspensi & kemudi</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-red-600/10 text-red-500 rounded-xl text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Suku Cadang Asli</h4>
+                        <p class="text-sm text-slate-400">Komponen Original & OEM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN SECTION -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Layanan Kami</h2>
+                <p class="mt-4 text-slate-400">Solusi lengkap untuk merawat kaki-kaki dan performa kendaraan Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spesialis Kaki-Kaki Mobil</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Perbaikan suspensi, shockbreaker, rack steer, tie rod, bushing, dan seluruh komponen kaki-kaki mobil.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-dharmachakra"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spooring & Balancing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Presisi kelurusan roda dan kestabilan kemudi untuk kenyamanan serta keamanan maksimal saat berkendara.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-oil-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Car Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Penggantian oli mesin, tune-up, perawatan transmisi, dan servis rutin berkala kendaraan Anda.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-car-burst"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Car Repair</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Layanan perbaikan umum mesin dan sistem kendaraan yang ditangani mekanik berpengalaman.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spare Parts & Accessories</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Penyediaan suku cadang asli dan OEM berkualitas untuk berbagai jenis dan merk kendaraan.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-red-600/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Auto Detailing & Wash</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Layanan pembersihan menyeluruh untuk mengembalikan kilau dan kenyamanan interior-eksterior mobil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROSES PENGERJAAN -->
+    <section class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Proses Pengerjaan</h2>
+                <p class="mt-4 text-slate-400">3 langkah mudah perawatan mobil di SHINJI PER.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-red-600/30">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Konsultasi Permasalahan</h3>
+                    <p class="text-slate-400 text-sm">Sampaikan keluhan kaki-kaki atau performa mobil Anda melalui chat WhatsApp atau langsung datang.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-red-600/30">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Penawaran Transparan</h3>
+                    <p class="text-slate-400 text-sm">Kami akan melakukan pengecekan dan memberikan rincian penawaran biaya yang transparan.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-red-600/30">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Proses Treatment</h3>
+                    <p class="text-slate-400 text-sm">Mobil Anda segera ditangani dengan peralatan mumpuni hingga kembali optimal dan nyaman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ULASAN SECTION -->
+    <section id="reviews" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Ulasan Pelanggan</h2>
+                <p class="mt-4 text-slate-400">Kepuasan pelanggan adalah prioritas utama kami di SHINJI PER.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Keren, perbaikan kaki-kaki mobil jadi empuk lagi, harga lebih terjangkau dan kualitas kerja sangat rapi!"</p>
+                    <span class="font-bold text-white block">- Candra</span>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Teknisinya pinter banget menganalisa masalah bunyi-bunyi di kaki-kaki. Pelayanan customer service ok banget."</p>
+                    <span class="font-bold text-white block">- Bambang Sugiharto</span>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Bengkel spesialis kaki-kaki yang sangat *decent* dan terpercaya untuk perawatan mobil kesayangan."</p>
+                    <span class="font-bold text-white block">- Andrew Surya</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & LOKASI -->
+    <section id="contact" class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Hubungi & Kunjungi SHINJI PER</h2>
+                    <p class="text-slate-400 mb-8">Jangan tunggu mobil Anda makin parah. Konsultasikan masalah kendaraan Anda sekarang juga.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-red-600/10 text-red-500 rounded-lg text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Lokasi Bengkel</h4>
+                                <p class="text-slate-400 text-sm mb-2">Lihat titik lokasi resmi kami di Google Maps:</p>
+                                <a href="https://maps.app.goo.gl/m4Zpkgt59nzCUGgc9" target="_blank" 
+                                   class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold transition">
+                                    <i class="fa-solid fa-map-location-dot"></i> Buka Google Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-red-600/10 text-red-500 rounded-lg text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Jam Operasional</h4>
+                                <p class="text-slate-400 text-sm">Senin – Jumat: 08:30 – 16:30 WIB</p>
+                                <p class="text-slate-400 text-sm">Sabtu: 08:30 – 14:30 WIB</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-red-600/10 text-red-500 rounded-lg text-xl">
+                                <i class="fa-brands fa-whatsapp text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">WhatsApp</h4>
+                                <a href="https://wa.me/6282113777388?text=Halo%20SHINJI%20PER,%20saya%20ingin%20konsultasi" target="_blank" class="text-green-400 hover:underline text-sm font-medium flex items-center gap-1.5 mt-1">
+                                    <i class="fa-brands fa-whatsapp"></i> +62 821-1377-7388 (Klik untuk Chat)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="w-full h-80 lg:h-auto bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex flex-col items-center justify-center p-6 text-center">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">SHINJI PER Maps Location</h3>
+                    <p class="text-slate-400 text-sm mb-6">Klik tombol di bawah untuk melihat rute langsung menuju bengkel via Google Maps.</p>
+                    <a href="https://maps.app.goo.gl/m4Zpkgt59nzCUGgc9" target="_blank" 
+                       class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2 shadow-lg shadow-red-600/30">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Dapatkan Petunjuk Arah
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm">&copy; 2026 SHINJI PER Car Service. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6282113777388?text=Halo%20SHINJI%20PER,%20saya%20ingin%20konsultasi%20servis%20mobil" target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl transition-all z-50 hover:scale-110" title="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT UNTUK MENU MOBILE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
